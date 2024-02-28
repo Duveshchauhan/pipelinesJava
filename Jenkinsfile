@@ -29,7 +29,7 @@ pipeline {
 
             steps {
                 echo "deploy stage"
-                deploy adapters: [tomcat10 (
+                deploy adapters: [tomcat9 (
                         credentialsId: 'manager-script',
                         path: '',
                         url: 'http://localhost:8088/'
